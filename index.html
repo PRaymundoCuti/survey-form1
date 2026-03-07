@@ -13,8 +13,8 @@
     <main>
         <form action="https://httpbin.org/post" id="main-form" method="post" novalidate>
             <!-- #region -->
-            <!-- Form Structure and Setup -->
-            <!-- Basic Form Inputs -->
+    <!-- Form Structure and Setup -->
+        <!-- Basic Form Inputs -->
             <!-- name field-->
             <div class="input-container">
                 <label for="username">Username:</label>
@@ -37,6 +37,52 @@
                         aria-invalid="false" 
                         aria-errormessage="email-error" />
                 <span id="email-error" class="error" >Error placeholder</span>
+            </div>
+    <!-- Form Structure and Setup -->
+        <!-- Choice-Based Inputs -->
+            <!-- flavour (radio button) / single-choice  -->
+            <div class="input-container">
+                <fieldset id="flavour" 
+                        aria-describedby="flavour-error"
+                        aria-invalid="false"
+                        aria-errormessage="flavour-error">
+                    <legend>Choose your favorite cake flavour:</legend>
+                    <div class="option-container">
+                        <input type="radio" id="cake-flavour1" name="flavour" value="chocolate" />
+                        <label for="cake-flavour1">chocolate</label>
+                    </div>
+                    <div class="option-container">
+                        <input type="radio" id="cake-flavour2" name="flavour" value="vanilla" />
+                        <label for="cake-flavour2">vanilla</label>
+                    </div>
+                    <div class="option-container">
+                        <input type="radio" id="cake-flavour3" name="flavour" value="mint" />
+                        <label for="cake-flavour3">mint</label>
+                    </div>
+                </fieldset>
+                <span id="flavour-error" class="error" >Error placeholder</span>
+            </div>
+            <!-- topping (check-box) / mutliple choice -->
+            <div class="input-container">
+                <fieldset id="toppings"
+                        aria-describedby="toppings-error"
+                        aria-invalid="false"
+                        aria-errormessage="toppings-error">
+                    <legend>Choose your cake toppings:</legend>
+                    <div class="option-container">
+                        <input type="checkbox" id="topping1" name="topping" value="chocolate" />
+                        <label for="topping1">chocolate</label>
+                    </div>
+                    <div class="option-container">
+                        <input type="checkbox" id="topping2" name="topping" value="fruits" />
+                        <label for="topping2">fruits</label>
+                    </div>
+                    <div class="option-container">
+                        <input type="checkbox" id="topping3" name="topping" value="candies" />
+                        <label for="topping3">candies</label>
+                    </div>
+                </fieldset>
+                <span id="toppings-error" class="error" ></span>
             </div>
         </form>
     </main>
