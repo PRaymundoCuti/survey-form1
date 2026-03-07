@@ -1,0 +1,51 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(182, 182, 182);
+}
+header{
+    text-align: center;
+}
+main{  
+    flex:1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    margin: 5rem;
+    padding:2rem;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+#submit-button{
+    background-color: rgb(47, 137, 255);
+    color: white;
+    max-width: 50%;
+}
+
+.input-container label, .error{
+    text-align: center;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}
+input:not([name="topping"], [name="flavour"]), fieldset, select {
+    min-width: 300px;
+    border-color: antiquewhite;
+    border-style:outset;
+}
