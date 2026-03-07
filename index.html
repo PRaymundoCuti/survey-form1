@@ -20,7 +20,7 @@
             <div class="input-container">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" 
-                        required 
+                         
                         minlength="5" maxlength="25"
                         placeholder="username" 
                         aria-describedby="username-error"
@@ -32,7 +32,7 @@
             <div class="input-container">
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" 
-                        required 
+                         
                         placeholder="thisis@example.com"
                         aria-describedby="email-error" 
                         aria-invalid="false" 
@@ -91,7 +91,7 @@
             <div class="input-container">
                 <label for="size">chose a size:</label>
                 <select id="size" 
-                    required 
+                     
                     aria-describedby="size-error"
                     aria-invalid="false"
                     aria-errormessage="size-error"
@@ -106,9 +106,9 @@
         <!-- Regex Validation Field -->
             <!-- phone-number (regex)  -->
             <div class="input-container">
-                <label for="phone">Phone-number:</label>
+                <label for="phone">Canadian Phone-number:</label>
                 <input type="text" id="phone" name="phone"  
-                        placeholder="431 990 0000"
+                        placeholder="0000000000"
                         aria-describedby="phone-error"
                         aria-invalid="false"
                         aria-errormessage="phone-error"/>
@@ -131,7 +131,7 @@
                 <input type="number" id="quantity" name="quantity" 
                         min="1" max="6" 
                         placeholder="1-6"
-                        aria-describedby="age-error" 
+                        aria-describedby="quantity-error" 
                         aria-invalid="false" 
                         aria-errormessage="quantity-error"/>
                 <span id="quantity-error" class="error" >Error placeholder</span>
@@ -139,9 +139,6 @@
             <!-- submit form button / outside for eastetich-->  
             <input type="submit" value="Submit" id="submit-button">
         </form>
-
-
-
     </main>
     <footer>
         <p>By Pablo R.</p>
