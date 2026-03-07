@@ -38,7 +38,7 @@
                         aria-errormessage="email-error" />
                 <span id="email-error" class="error" >Error placeholder</span>
             </div>
-    <!-- Form Structure and Setup -->
+            
         <!-- Choice-Based Inputs -->
             <!-- flavour (radio button) / single-choice  -->
             <div class="input-container">
@@ -82,10 +82,9 @@
                         <label for="topping3">candies</label>
                     </div>
                 </fieldset>
-                <span id="toppings-error" class="error" ></span>
+                <span id="toppings-error" class="error" >Error placeholder</span>
             </div>
 
-    <!-- Form Structure and Setup -->
         <!-- Dropdown menu -->
             <!-- size (select) / menu  -->
             <div class="input-container">
@@ -101,8 +100,25 @@
                     <option value="medium">medium</option>
                     <option value="large">large</option>
                 </select>
-                <span id="size-error" class="error" ></span>
+                <span id="size-error" class="error" >Error placeholder</span>
             </div>
+        <!-- Regex Validation Field -->
+            <!-- phone-number (regex)  -->
+            <div class="input-container">
+                <label for="phone">Phone-number:</label>
+                <input id="phone" name="phone"  
+                        placeholder="431 990 0000"
+                        aria-describedby="phone-error"
+                        aria-invalid="false"
+                        aria-errormessage="phone-error">
+                        >
+                <span id="phone-error" class="error" >Error placeholder</span>
+            </div>
+
+        <!-- Additional Inputs -->
+            <!-- Order date  -->
+            <!-- Quantity  -->
+
 
         </form>
     </main>
