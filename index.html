@@ -8,10 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>Cake Survey Form</h1>
+       
     </header>
     <main>
-        <form action="https://httpbin.org/post" id="main-form" method="post" novalidate>
+        <form action="https://httpbin.org/post" id="main-form" method="post"> 
+            <h1>Cake Survey Form</h1>
             <!-- #region -->
     <!-- Form Structure and Setup -->
         <!-- Basic Form Inputs -->
@@ -59,8 +60,8 @@
                         <input type="radio" id="cake-flavour3" name="flavour" value="mint" />
                         <label for="cake-flavour3">mint</label>
                     </div>
+                    <span id="flavour-error" class="error" >Error placeholder</span>
                 </fieldset>
-                <span id="flavour-error" class="error" >Error placeholder</span>
             </div>
             <!-- topping (check-box) / mutliple choice -->
             <div class="input-container">
@@ -81,8 +82,8 @@
                         <input type="checkbox" id="topping3" name="topping" value="candies" />
                         <label for="topping3">candies</label>
                     </div>
+                    <span id="toppings-error" class="error" >Error placeholder</span>
                 </fieldset>
-                <span id="toppings-error" class="error" >Error placeholder</span>
             </div>
 
         <!-- Dropdown menu -->
@@ -135,11 +136,11 @@
                         aria-errormessage="quantity-error"/>
                 <span id="quantity-error" class="error" >Error placeholder</span>
             </div>
-
+            <!-- submit form button / outside for eastetich-->  
+            <input type="submit" value="Submit" id="submit-button">
         </form>
 
-        <!-- submit form button / outside for eastetich-->  
-        <button type="submit" id="submit-button" from="main-form">Submit Form</button>
+
 
     </main>
     <footer>
