@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assigment 04</title>
+</head>
+<body>
+    <header>
+        <h1>Cake Survey Form</h1>
+    </header>
+    <main>
+        <form action="https://httpbin.org/post" id="main-form" method="post" novalidate>
+            <!-- #region -->
+            <!-- Form Structure and Setup -->
+            <!-- Basic Form Inputs -->
+            <!-- name field-->
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" 
+                        required 
+                        minlength="5" maxlength="25"
+                        placeholder="username" 
+                        aria-describedby="username-error"
+                        aria-invalid="false" 
+                        aria-errormessage="username-error" />
+                <span id="username-error" class="error" >Error placeholder</span>
+            </div>
+            <!-- email field -->
+            <div class="input-container">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" 
+                        required 
+                        placeholder="thisis@example.com"
+                        aria-describedby="email-error" 
+                        aria-invalid="false" 
+                        aria-errormessage="email-error" />
+                <span id="email-error" class="error" >Error placeholder</span>
+            </div>
+        </form>
+    </main>
+
+
+
+     
+    
+    
+</body>
+</html>
