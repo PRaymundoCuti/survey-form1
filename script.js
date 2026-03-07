@@ -35,6 +35,15 @@ function isInFuture(date){
 
     return today<inputDate
 }
-function numberValidate(number){
-    return isNotEmpty(number) && number.min<number && number.max<number
+function inputNumberValidate(number){
+    const numberStr = number.value
+    const numberInt = parseInt(numberStr,10)
+
+    const minStr = number.min;  
+    const maxStr = number.max;
+
+    const minInt = parseInt(minStr,10)
+    const maxInt = parseInt(maxStr,10)
+
+    return isNotEmpty(number) && minInt<numberInt && maxInt<numberInt
 }
