@@ -84,6 +84,26 @@
                 </fieldset>
                 <span id="toppings-error" class="error" ></span>
             </div>
+
+    <!-- Form Structure and Setup -->
+        <!-- Dropdown menu -->
+            <!-- size (select) / menu  -->
+            <div class="input-container">
+                <label for="size">chose a size:</label>
+                <select id="size" 
+                    required 
+                    aria-describedby="size-error"
+                    aria-invalid="false"
+                    aria-errormessage="size-error"
+                    >
+                    <option value="">Select a size</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select>
+                <span id="size-error" class="error" ></span>
+            </div>
+
         </form>
     </main>
 
