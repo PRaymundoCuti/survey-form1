@@ -106,18 +106,36 @@
             <!-- phone-number (regex)  -->
             <div class="input-container">
                 <label for="phone">Phone-number:</label>
-                <input id="phone" name="phone"  
+                <input type="text" id="phone" name="phone"  
                         placeholder="431 990 0000"
                         aria-describedby="phone-error"
                         aria-invalid="false"
-                        aria-errormessage="phone-error">
-                        >
+                        aria-errormessage="phone-error"/>
                 <span id="phone-error" class="error" >Error placeholder</span>
             </div>
 
         <!-- Additional Inputs -->
             <!-- Order date  -->
+            <div class="input-container">
+                <label for="date">When it's the birthday:</label>
+                <input type="date" id="date" name="date"
+                        aria-describedby="date-error"
+                        aria-invalid="false"
+                        aria-errormessage="date-error"/>
+                <span id="date-error" class="error" ></span>
+            </div>
             <!-- Quantity  -->
+            <div class="input-container">
+                <label for="quantity">How many cakes:</label>
+                <input type="number" id="quantity" name="quantity" 
+                        min="1" max="6" 
+                        placeholder="1-6"
+                        aria-describedby="age-error" 
+                        aria-invalid="false" 
+                        aria-errormessage="quantity-error"/>
+                <span id="quantity-error" class="error" ></span>
+            </div>
+
 
 
         </form>
