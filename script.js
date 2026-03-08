@@ -60,8 +60,8 @@ function cleanError(element){
     element.setAttribute("aria-invalid", "false");
 
     const errorElement='${element}-error';
-    errorElement.style.display = "block";
-
+    errorElement.style.display = "none";
 }
+
 
 
