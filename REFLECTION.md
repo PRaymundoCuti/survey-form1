@@ -1,0 +1,11 @@
+# REFLECITON
+
+## WHAT I LEARNED   
+- HTML TO BUILD FORM
+- JS CREATE CUSTOM VALIDATION FORM VALIDATION
+- REGEX TO VALIDATE INPUT PATTERNS
+- USE OF ARIA ATTRIBUTES, IMPROVING ACCESSIBILITY
+## CHALLENGES
+- Linking inputs and error messages
+- Creating custom validation with JS
+- LEARN ARIA bases and when and where to use it
