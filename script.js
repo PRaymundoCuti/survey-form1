@@ -47,3 +47,21 @@ function inputNumberValidate(number){
 
     return isNotEmpty(number) && minInt<numberInt && maxInt<numberInt
 }
+
+function showError(element,message){
+    element.setAttribute("aria-invalid", "true");
+
+    const errorElement='${element}-error';
+    errorElement.style.display = "block";
+    errorElement.textContent = message
+}
+
+function cleanError(element){
+    element.setAttribute("aria-invalid", "false");
+
+    const errorElement='${element}-error';
+    errorElement.style.display = "block";
+
+}
+
+
