@@ -43,6 +43,8 @@ form{
 .error{
     color: red;
     font-weight: bold;
+    display: none;
+
 }
 input:not([name="topping"], [name="flavour"]), fieldset, select {
     min-width: 300px;

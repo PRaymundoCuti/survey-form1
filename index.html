@@ -1,153 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Assigment 04</title>
-</head>
-<body>
-    <header>
-       
-    </header>
-    <main>
-        <form action="https://httpbin.org/post" id="main-form" method="post"> 
-            <h1>Cake Survey Form</h1>
-            <!-- #region -->
-    <!-- Form Structure and Setup -->
-        <!-- Basic Form Inputs -->
-            <!-- name field-->
-            <div class="input-container">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" 
-                         
-                        minlength="5" maxlength="25"
-                        placeholder="username" 
-                        aria-describedby="username-error"
-                        aria-invalid="false" 
-                        aria-errormessage="username-error" />
-                <span id="username-error" class="error" >Error placeholder</span>
-            </div>
-            <!-- email field -->
-            <div class="input-container">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" 
-                         
-                        placeholder="thisis@example.com"
-                        aria-describedby="email-error" 
-                        aria-invalid="false" 
-                        aria-errormessage="email-error" />
-                <span id="email-error" class="error" >Error placeholder</span>
-            </div>
-            
-        <!-- Choice-Based Inputs -->
-            <!-- flavour (radio button) / single-choice  -->
-            <div class="input-container">
-                <fieldset id="flavour" 
-                        aria-describedby="flavour-error"
-                        aria-invalid="false"
-                        aria-errormessage="flavour-error">
-                    <legend>Choose your favorite cake flavour:</legend>
-                    <div class="option-container">
-                        <input type="radio" id="cake-flavour1" name="flavour" value="chocolate" />
-                        <label for="cake-flavour1">chocolate</label>
-                    </div>
-                    <div class="option-container">
-                        <input type="radio" id="cake-flavour2" name="flavour" value="vanilla" />
-                        <label for="cake-flavour2">vanilla</label>
-                    </div>
-                    <div class="option-container">
-                        <input type="radio" id="cake-flavour3" name="flavour" value="mint" />
-                        <label for="cake-flavour3">mint</label>
-                    </div>
-                    <span id="flavour-error" class="error" >Error placeholder</span>
-                </fieldset>
-            </div>
-            <!-- topping (check-box) / mutliple choice -->
-            <div class="input-container">
-                <fieldset id="toppings"
-                        aria-describedby="toppings-error"
-                        aria-invalid="false"
-                        aria-errormessage="toppings-error">
-                    <legend>Choose your cake toppings:</legend>
-                    <div class="option-container">
-                        <input type="checkbox" id="topping1" name="topping" value="chocolate" />
-                        <label for="topping1">chocolate</label>
-                    </div>
-                    <div class="option-container">
-                        <input type="checkbox" id="topping2" name="topping" value="fruits" />
-                        <label for="topping2">fruits</label>
-                    </div>
-                    <div class="option-container">
-                        <input type="checkbox" id="topping3" name="topping" value="candies" />
-                        <label for="topping3">candies</label>
-                    </div>
-                    <span id="toppings-error" class="error" >Error placeholder</span>
-                </fieldset>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Assigment 04</title>
+    </head>
+    <body>
+        <header>
+        
+        </header>
+        <main>
+            <form action="https://httpbin.org/post" id="main-form" method="post" novalidate> 
+                <h1>Cake Survey Form</h1>
+                <!-- #region -->
+        <!-- Form Structure and Setup -->
+            <!---- Basic Form Inputs -->
+                <!-- name field-->
+                <div class="input-container">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" 
+                            
+                            minlength="5" maxlength="25"
+                            placeholder="username" 
+                            aria-describedby="username-error"
+                            aria-invalid="false" 
+                            aria-errormessage="username-error" />
+                    <span id="username-error" class="error" >Error placeholder</span>
+                </div>
+                <!-- email field -->
+                <div class="input-container">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" 
+                            
+                            placeholder="thisis@example.com"
+                            aria-describedby="email-error" 
+                            aria-invalid="false" 
+                            aria-errormessage="email-error" />
+                    <span id="email-error" class="error" >Error placeholder</span>
+                </div>
+                
+            <!-- Choice-Based Inputs -->
+                <!-- flavour (radio button) / single-choice  -->
+                <div class="input-container">
+                    <fieldset id="flavour" 
+                            aria-describedby="flavour-error"
+                            aria-invalid="false"
+                            aria-errormessage="flavour-error">
+                        <legend>Choose your favorite cake flavour:</legend>
+                        <div class="option-container">
+                            <input type="radio" id="cake-flavour1" name="flavour" value="chocolate" />
+                            <label for="cake-flavour1">chocolate</label>
+                        </div>
+                        <div class="option-container">
+                            <input type="radio" id="cake-flavour2" name="flavour" value="vanilla" />
+                            <label for="cake-flavour2">vanilla</label>
+                        </div>
+                        <div class="option-container">
+                            <input type="radio" id="cake-flavour3" name="flavour" value="mint" />
+                            <label for="cake-flavour3">mint</label>
+                        </div>
+                        <span id="flavour-error" class="error" >Error placeholder</span>
+                    </fieldset>
+                </div>
+                <!-- topping (check-box) / mutliple choice -->
+                <div class="input-container">
+                    <fieldset id="toppings"
+                            aria-describedby="toppings-error"
+                            aria-invalid="false"
+                            aria-errormessage="toppings-error">
+                        <legend>Choose your cake toppings:</legend>
+                        <div class="option-container">
+                            <input type="checkbox" id="topping1" name="topping" value="chocolate" />
+                            <label for="topping1">chocolate</label>
+                        </div>
+                        <div class="option-container">
+                            <input type="checkbox" id="topping2" name="topping" value="fruits" />
+                            <label for="topping2">fruits</label>
+                        </div>
+                        <div class="option-container">
+                            <input type="checkbox" id="topping3" name="topping" value="candies" />
+                            <label for="topping3">candies</label>
+                        </div>
+                        <span id="toppings-error" class="error" >Error placeholder</span>
+                    </fieldset>
+                </div>
 
-        <!-- Dropdown menu -->
-            <!-- size (select) / menu  -->
-            <div class="input-container">
-                <label for="size">chose a size:</label>
-                <select id="size" 
-                     
-                    aria-describedby="size-error"
-                    aria-invalid="false"
-                    aria-errormessage="size-error"
-                    >
-                    <option value="">Select a size</option>
-                    <option value="small">small</option>
-                    <option value="medium">medium</option>
-                    <option value="large">large</option>
-                </select>
-                <span id="size-error" class="error" >Error placeholder</span>
-            </div>
-        <!-- Regex Validation Field -->
-            <!-- phone-number (regex)  -->
-            <div class="input-container">
-                <label for="phone">Canadian Phone-number:</label>
-                <input type="text" id="phone" name="phone"  
-                        placeholder="0000000000"
-                        aria-describedby="phone-error"
+            <!-- Dropdown menu -->
+                <!-- size (select) / menu  -->
+                <div class="input-container">
+                    <label for="size">chose a size:</label>
+                    <select id="size" 
+                        
+                        aria-describedby="size-error"
                         aria-invalid="false"
-                        aria-errormessage="phone-error"/>
-                <span id="phone-error" class="error" >Error placeholder</span>
-            </div>
+                        aria-errormessage="size-error"
+                        >
+                        <option value="">Select a size</option>
+                        <option value="small">small</option>
+                        <option value="medium">medium</option>
+                        <option value="large">large</option>
+                    </select>
+                    <span id="size-error" class="error" >Error placeholder</span>
+                </div>
+            <!-- Regex Validation Field -->
+                <!-- phone-number (regex)  -->
+                <div class="input-container">
+                    <label for="phone">Canadian Phone-number:</label>
+                    <input type="text" id="phone" name="phone"  
+                            placeholder="0000000000"
+                            aria-describedby="phone-error"
+                            aria-invalid="false"
+                            aria-errormessage="phone-error"/>
+                    <span id="phone-error" class="error" >Error placeholder</span>
+                </div>
 
-        <!-- Additional Inputs -->
-            <!-- Order date  -->
-            <div class="input-container">
-                <label for="date">When it's the birthday:</label>
-                <input type="date" id="date" name="date"
-                        aria-describedby="date-error"
-                        aria-invalid="false"
-                        aria-errormessage="date-error"/>
-                <span id="date-error" class="error" >Error placeholder</span>
-            </div>
-            <!-- Quantity  -->
-            <div class="input-container">
-                <label for="quantity">How many cakes:</label>
-                <input type="number" id="quantity" name="quantity" 
-                        min="1" max="6" 
-                        placeholder="1-6"
-                        aria-describedby="quantity-error" 
-                        aria-invalid="false" 
-                        aria-errormessage="quantity-error"/>
-                <span id="quantity-error" class="error" >Error placeholder</span>
-            </div>
-            <!-- submit form button / outside for eastetich-->  
-            <input type="submit" value="Submit" id="submit-button">
-        </form>
-    </main>
-    <footer>
-        <p>By Pablo R.</p>
-    </footer>
-    <script src="script.js"></script>
+            <!-- Additional Inputs -->
+                <!-- Order date  -->
+                <div class="input-container">
+                    <label for="date">When it's the birthday:</label>
+                    <input type="date" id="date" name="date"
+                            aria-describedby="date-error"
+                            aria-invalid="false"
+                            aria-errormessage="date-error"/>
+                    <span id="date-error" class="error" >Error placeholder</span>
+                </div>
+                <!-- Quantity  -->
+                <div class="input-container">
+                    <label for="quantity">How many cakes:</label>
+                    <input type="number" id="quantity" name="quantity" 
+                            min="1" max="6" 
+                            placeholder="1-6"
+                            aria-describedby="quantity-error" 
+                            aria-invalid="false" 
+                            aria-errormessage="quantity-error"/>
+                    <span id="quantity-error" class="error" >Error placeholder</span>
+                </div>
+                <!-- submit form button / outside for eastetich-->  
+                <button type="submit" value="Submit" id="submit-button"> submit </button>
+            </form>
+        </main>
+        <footer>
+            <p>By Pablo R.</p>
+        </footer>
+        <script src="script.js"></script>
 
 
-     
-    
-    
-</body>
+        
+        
+        
+    </body>
 </html>
